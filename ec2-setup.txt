@@ -1,0 +1,7 @@
+# EC2 Setup (Notes)
+- Choose Amazon Linux AMI
+- t2.micro (Free Tier eligible)
+- Create / use a key pair (PEM)
+- Open inbound rules: 22 (SSH), 80 (HTTP) as needed
+- Connect via SSH: ssh -i key.pem ec2-user@<PUBLIC_IP>
+- Install Nginx: sudo yum install -y nginx && sudo systemctl start nginx
